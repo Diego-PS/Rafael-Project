@@ -1,0 +1,130 @@
+HDR GRP CANADIAN GEODETIC SURVEY, SURVEYOR GENERAL BRANCH, NATURAL RESOURCES CANADA
+HDR ADR GOVERNMENT OF CANADA, 588 BOOTH STREET ROOM 334, OTTAWA ONTARIO K1A 0Y7
+HDR TEL 343-292-6617
+HDR EMA nrcan.geodeticinformation-informationgeodesique.rncan@canada.ca
+VER 3.50.2 (2021-12-08)
+NOW 2022-03-09 01:01:02.00
+RNX amcr0201_120.21o
+MKR AMCR
+MOD STATIC
+BEG 2021-01-20 12:00:00.00
+END 2021-01-20 14:00:00.00
+INT 30.00
+EPO 241 241 241
+EXE 3 sec
+OBS G C1C C2W C2X L1W L2W
+OBS R C1P C2P L1P L2P
+PAR TYPE         SYS SIG SAT INIT      NOISE
+PAR POS_X                    1.000e+10 0.000e+00
+PAR POS_Y                    1.000e+10 0.000e+00
+PAR POS_Z                    1.000e+10 0.000e+00
+PAR TZD                      5.000e-02 5.000e-05
+PAR TZD_GRAD_N               3.000e-03 1.667e-06
+PAR TZD_GRAD_E               3.000e-03 1.667e-06
+PAR RX_CLK       G           1.000e+10 1.000e+10
+PAR RX_CLK       R           1.000e+10 1.000e+10
+PAR AMB          G   L1W ALL 1.000e+10 0.000e+00
+PAR AMB          G   L2W ALL 1.000e+10 0.000e+00
+PAR AMB          R   L1P ALL 1.000e+10 0.000e+00
+PAR AMB          R   L2P ALL 1.000e+10 0.000e+00
+PAR RX_USD       G   L1      1.000e+10 0.000e+00
+PAR RX_USD       G   L2      1.000e+10 0.000e+00
+PAR RX_USD       G   C1C     1.000e+10 1.000e+10
+PAR RX_USD       G   C2W     1.000e+10 1.000e+10
+PAR RX_USD       R   C1P     1.000e+10 1.000e+10
+PAR RX_USD       R   C2P     1.000e+10 1.000e+10
+PAR RX_USD       G   C2X     1.000e+10 1.000e+10
+PAR STEC         G       ALL 1.000e+10 1.000e-01
+PAR STEC         R       ALL 1.000e+10 1.000e-01
+SP3 dcf21413.sp3
+CLK dcf21413.clk
+ERP dcf21417.erp
+BIA dcf21413.bia
+ADV dcf21413.adv
+ATX igs14_2194_nrcan.atx
+VMF [ah|aw|zh|zw]21020.h12
+VMF [ah|aw|zh|zw]21020.h18
+SNX igs_satellite_metadata.snx
+ELV 7.5
+TZD VMF1
+REC TRIMBLE NETR8
+ANT TRM59800.00     NONE
+ARP    0.000    0.000    0.008
+PCO G01   0.001  0.001  0.090
+PCO G02   0.000  0.000  0.117
+PCO R01   0.001  0.001  0.090
+PCO R02   0.000  0.000  0.117
+OTL   .00990 .00321 .00220 .00086 .00116 .00008 .00035 .00009 .00053 .00029 .00025
+OTL   .00143 .00048 .00025 .00016 .00082 .00048 .00027 .00009 .00006 .00002 .00001
+OTL   .00090 .00024 .00016 .00008 .00054 .00038 .00018 .00006 .00009 .00005 .00003
+OTL     57.0   81.3   43.9   81.0 -138.9   94.0 -142.9  -13.3 -174.8 -176.9 -178.5
+OTL     27.7   58.9   19.3   54.6   50.6   10.7   48.7  -20.3  118.5  133.2   23.4
+OTL     72.9  133.3   17.5  131.6   92.5   81.5   91.4   76.2  168.5  172.7  177.3
+OTL COMPUTED BY M.S. BOS AND H.-G. SCHERNECK, OSO CHALMERS
+YAW G05 2021-01-20 12:20:34 2021-01-20 12:25:20 NOON   1.3 GPS IIR
+IAR 95.10%
+AVF 1.000
+APR RINEX
+ELL GRS80
+POS CRD  SYST        EPOCH          A_PRIORI         ESTIMATED       DIFF SIGMA(95%) CORRELATIONS
+POS   X IGb14 21:020:46800      2874244.4295      2874244.4250    -0.0045     0.0153  1.0000
+POS   Y IGb14 21:020:46800     -5675803.1723     -5675803.2845    -0.1122     0.0245 -0.7986  1.0000
+POS   Z IGb14 21:020:46800      -451414.7750      -451414.5323     0.2427     0.0062 -0.0851  0.0584  1.0000
+POS LAT IGb14 21:020:46800    -4  5  8.96223    -4  5  8.95412     0.2490     0.0064  1.0000
+POS LON IGb14 21:020:46800   -63  8 31.93372   -63  8 31.93550    -0.0547     0.0082 -0.0211  1.0000
+POS HGT IGb14 21:020:46800           42.3111           42.3916     0.0806     0.0276  0.2270  0.1303  1.0000
+PRJ TYPE ZONE    EASTING     NORTHING   SCALE_POINT   SCALE_COMBINED HEMISPHERE
+PRJ  UTM   20 484216.154  9548384.987    0.99960308       0.99959642          S
+OHT     SYST    MODEL             HEIGHT
+OHT CGVD2013 CGG2013a OUTSIDE_GRID_LIMIT
+GHT OUTSIDE_GRID_LIMIT
+OFF -91.9006 0.1701 ns
+DRI -13.8276 ns/day
+RES G C1C 0.807  
+RES G C2W 0.390  
+RES G C2X 0.000  
+RES G L1W 0.003  
+RES G L2W 0.002  
+RES R C1P 0.559  
+RES R C2P 0.472  
+RES R L1P 0.003  
+RES R L2P 0.002  
+RES ELV        G_C1C   G_C2W   G_C2X   G_L1W   G_L2W   R_C1P   R_C2P   R_L1P   R_L2P 
+RES ELV  5.0   1.572   0.504   0.000   0.004   0.003   0.722   0.622   0.005   0.003 
+RES ELV 15.0   0.963   0.490   0.000   0.003   0.002   0.623   0.518   0.004   0.002 
+RES ELV 25.0   0.692   0.373   0.000   0.003   0.002   0.571   0.462   0.003   0.002 
+RES ELV 35.0   0.576   0.336   0.000   0.002   0.001   0.524   0.439   0.003   0.002 
+RES ELV 45.0   0.404   0.325   0.000   0.001   0.001   0.492   0.391   0.002   0.001 
+RES ELV 55.0   0.406   0.284   0.000   0.001   0.001   0.399   0.385   0.001   0.001 
+RES ELV 65.0   0.370   0.287   0.000   0.001   0.001   0.433   0.423   0.001   0.001 
+RES ELV 75.0   0.438   0.232   0.000   0.001   0.000   0.385   0.334   0.001   0.001 
+RES ELV 85.0   0.000   0.000   0.000   0.000   0.000   0.338   0.303   0.001   0.001 
+FLG PRN    EPO    TRK    CLK    EPH    ELV    YAW    DCB    SLP    MIS    RES
+FLG G05    126      0      0      0     30     19      0      1      0      0
+FLG G10    166      4      0      0     12      0      0      1      0      0
+FLG G12    241      0      0      0      0      0      0      0      0      0
+FLG G15    186     10      0      0      0      0      0     10      0      0
+FLG G18    241      0      0      0      0      0      0      0      0      0
+FLG G20    241      0      0      0      0      0      0      0      0      0
+FLG G23    241      0      0      0      0      0      0      0      0      0
+FLG G24    160      1      0      0      0      0      0      1      0      0
+FLG G25    241      0      0      0      0      0      0      0      0      0
+FLG G26     52      0      0      0     15      0      0      1      0      0
+FLG G29    241      0      0      0      0      0      0      0      0      0
+FLG G31    233      0      0      0      8      0      0      1      0      0
+FLG G32    240      1      0      0      0      0      0      2      0      0
+FLG R04    152     18      0      0     29      0      0      9      0      0
+FLG R05    222      0      0      0     19      0      0      1      0      0
+FLG R09    241      0      0      0      0      0      0      0      0      0
+FLG R10      0    100      0      0      0      0      0      0      0      0
+FLG R15    179      1      0      0     16      0      0      0      0      0
+FLG R16    241      0      0      0      0      0      0      0      0      0
+FLG R18     23      0      0      0     13      0      0      0      0      0
+FLG R19    179      0      0      0      0      0      0     11      0      0
+FLG R20    233      0      8      0      0      0      0      4      0      0
+FLG R21    117     13      0      0     37      0      0      1      0      0
+FLG S33      0      0      0      0      0      0      0      0      0      0
+FLG S38      0      0      0      0      0      0      0      0      0      0
+FLG GXX   2609     16      0      0     65     19      0     17      0      0
+FLG RXX   1587    132      8      0    114      0      0     26      0      0
+FLG SXX      0      0      0      0      0      0      0      0      0      0

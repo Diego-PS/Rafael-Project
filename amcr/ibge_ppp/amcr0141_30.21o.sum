@@ -1,0 +1,339 @@
+-------------------------------------------------------------------------------
+GPS Posicionamento por Ponto Preciso (IBGE-PPP ver.        1.05/11216/2016-04-21)      
+Inst. Bras. de Geografia e Estatistica/Coordenacao de Geodesia - IBGE/CGED            
+Av. Republica do Chile 500, Rio de Janeiro - RJ, Brasil                    
+Fone: 0800-7218181 - Email: ibge@ibge.gov.br                                      
+Este serviço de posicionamento faz uso do aplicativo de processamento CSRS-PPP 
+desenvolvido pelo Geodetic Survey Division of Natural Resources of Canada (NRCan).                                             
+-------------------------------------------------------------------------------
+
+
+ -------------------------------------------------------------------------------
+ SECAO 1. Sumario dos Arquivos                 
+ -------------------------------------------------------------------------------
+ Conteudo                     Arquivos de Entrada 
+ Observacoes                  amcr0141_30.21o                                       
+ Opcoes de Processamento      sirg_est_2dia_l2.cmd                                  
+ Orbitas dos satelites        emf21404.sp3                                          
+ Relogio do satelite          emf21404.clk                                          
+ Orbitas dos satelites        emf21405.sp3                                          
+ Relogio do satelite          emf21405.clk                                          
+                          Arquivos de Saida   
+ Relatorio do Processamento   amcr0141_30.sum                                       
+ Parametros estimados         amcr0141_30.pos                                       
+ Arquivo Google Earth         amcr0141_30.kml                                       
+ Resumo do Processamento      amcr0141_30.pdf                                       
+ Arquivo LEIAME.txt           amcr0141_30_LEIAME.txt                                       
+                          Arquivos Internos   
+ Parametros do filtro         gpsppp.flt                                            
+ Desvio do satelite           gpsppp.svb_gnss_yrly                                  
+ Desvio da Antena             gpsppp.pcv                                            
+ Carga Oceanica               gpsppp.olc                                            
+ Transformacao de Coordenada  gpsppp.trf                                            
+ Orientacao do Polo           gpsppp.erp                                            
+     Ref. data  :   59228.500
+     Polo X     :    -129.102      -0.485 mas, mas/d
+     Polo Y     :     -29.256       0.844 mas, mas/d
+ -------------------------------------------------------------------------------
+
+
+ -------------------------------------------------------------------------------
+SECAO 2. Sumario dos parametros de processamento                 
+ -------------------------------------------------------------------------------
+
+ 2.1 Parametros de filtragem das observacoes                 
+     Multicaminho:       150.0
+     Time Gap    :       300.0
+     Narrowlane  :         8.1 Satel. adaptive
+     Widelane    :       130.0 Satel. adaptive
+     P3 filtrado :          NO
+     Codigo L1   :       P1|C1
+     Codigo L2   :       P2|C2
+     P1-C1 bias  :    APLICADO
+     P2-C2 bias  :    APLICADO
+
+ 2.2 Variacao do Centro de Fase da Antena do Satelite (CFA) - mm   para 2021-01-14
+     Centro de Massa -> CFA [Coordenadas X,Y,Z com origem no centro de massa do satelite]                    
+     GPS IIA  [   5, -21,1993]
+     PRNs  04 18
+     vCLK  00 00
+     GPS IIR  [  -1,  -1,1118]
+     PRNs  11 13 14 16 20 21 28
+     vCLK  00 13 00 12 16 16 13
+     GPS IIRM [   1,  -1, 729]
+     PRNs  02 05 07 12 15 17 19 22 23 29 31
+     vCLK  10 15 12 12 12 16 12 13 00 12 11
+     GPS IIF  [ 394,   0,1502]
+     PRNs  01 03 06 08 09 10 24 25 26 27 30 32
+     vCLK  01 01 01 19 01 02 25 01 01 01 01 01
+     GLN M    [-545,   0,2307]
+     PRNs  01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
+     vCLK  01 10 01 00 15 01 12 19 01 02 00 12 13 00 12 12 16 00 12 16 16 13 00 25
+
+ 2.3 Variacao do Centro de fase da Antena do Receptor (CFA) - mm            
+     Modelo da Antena     TRM59800.00     NONE
+     CFA [Norte, Este, Cima]       L1 [  1,  1, 90],  L2 [  0,  0,117]
+     Variacao do centro de fase com respeito ao angulo de elevacao       
+     AZIM ELV 90 85 80 75 70 65 60 55 50 45 40 35 30 25 20 15 10 5 0
+        0 L1  0  0 -1 -2 -3 -5 -6 -7 -8 -8 -8 -7 -6 -5 -3  0  4  9 15
+      360 L1  0  0 -1 -2 -3 -5 -6 -7 -8 -8 -8 -7 -6 -5 -3  0  4  9 15
+        0 L2  0  0 -1 -1 -2 -3 -4 -4 -5 -5 -5 -5 -4 -3 -1  1  3  6 11
+      360 L2  0  0 -1 -1 -2 -3 -4 -4 -5 -5 -5 -5 -4 -3 -1  1  3  6 11
+
+                             SV antenna offsets in body-axis
+      PRN  X-offset  Y-offset  Z-offset
+        1    394.00      0.00   1501.80
+        2      1.30     -1.10    728.80
+        3    394.00      0.00   1550.60
+        4      4.88    -21.04   1992.88
+        5     -3.30     -0.30    778.00
+        6    394.00      0.00   1467.00
+        7     -0.40      5.00    822.40
+        8    394.00      0.00   1501.40
+        9    394.00      0.00   1522.60
+       10    394.00      0.00   1515.10
+       11     -0.70     -1.20   1117.80
+       12     10.20     -5.60    767.80
+       13     -2.40     -1.60   1348.30
+       14      4.88    -21.04   1992.88
+       15      4.50      1.90    622.80
+       16     12.60     -6.90   1468.70
+       17      3.00      1.00    770.90
+       18      4.88    -21.04   1992.88
+       19      8.60     -0.60    808.20
+       20      1.00     -3.20   1313.50
+       21     -3.40      2.90   1359.10
+       22     -2.20      2.20    850.60
+       23      4.88    -21.04   1992.88
+       24    394.00      0.00   1407.10
+       25    394.00      0.00   1517.40
+       26    394.00      0.00   1503.50
+       27    394.00      0.00   1522.30
+       28      1.40      4.70    999.50
+       29     10.90     -4.50    791.80
+       30    394.00      0.00   1522.10
+       31     -0.80      5.80    912.50
+       32    394.00      0.00   1534.80
+       33   -545.00      0.00   2306.90
+       34   -545.00      0.00   2413.70
+       35   -545.00      0.00   2517.20
+       36   -545.00      0.00   2450.00
+       37   -545.00      0.00   2450.00
+       38   -545.00      0.00   2411.40
+       39   -545.00      0.00   2600.10
+       40   -545.00      0.00   2323.80
+       41      0.00      0.00   2083.00
+       42   -545.00      0.00   2325.10
+       43      0.00      0.00   2050.00
+       44   -545.00      0.00   2450.00
+       45   -545.00      0.00   2375.10
+       46   -545.00      0.00   2450.00
+       47   -545.00      0.00   2450.00
+       48   -545.00      0.00   2361.00
+       49   -545.00      0.00   2394.10
+       50   -545.00      0.00   2490.20
+       51   -545.00      0.00   2443.80
+       52   -545.00      0.00   2408.50
+       53   -545.00      0.00   2398.90
+       54   -545.00      0.00   2461.20
+       55   -545.00      0.00   2261.90
+       56   -545.00      0.00   2450.00
+       58      0.00      0.00   2014.70
+       59   -545.00      0.00   2451.20
+
+ 2.4 Parametros de transformacao entre sistemas de referencia               
+     ITRF (IGb14)->SIRGAS2000  NA EPOCA: 2021.0
+     Translacoes (Tx,Ty,Tz), Rotacoes (Rx,Ry,Rz), Escala (S)   
+
+        Tx       Ty       Tz      S        Rx       Ry      Rz
+       (cm)     (cm)     (cm)    (ppb)    (mas)    (mas)   (mas)
+     -0.270   -0.250   -0.420    1.200    0.000    0.000    0.000
+
+        dTx      dTy      dTz     dS       dRx      dRy     dRz
+       (cm/y)   (cm/y)   (cm/y)  (ppb/y)  (mas/y)  (mas/y) (mas/y)
+      0.000    0.000    0.000    0.000    0.000    0.000    0.000
+
+ 2.5 Coeficientes de carga oceanica                               ENCONTRADO
+ Harmonica           Radial        Norte-Sul       Este-Oeste
+  Term  Frequ.    Fase  Ampl.    Fase  Ampl.     Fase  Ampl.     Fase
+       (rad/h)   (gra)   (mm)    (gra)   (mm)    (gra)   (mm)    (gra)
+   M2  0.5059  124.300    9.6   58.300    0.8  255.400    1.3  212.600
+   S2  0.5236  360.000    3.1   81.900    0.3  308.800    0.5  242.300
+   N2  0.4964  349.336    2.2   44.900    0.1  200.600    0.2  204.200
+   K2  0.5250  200.933    0.8   80.400    0.1  301.500    0.1  239.300
+   K1  0.2625  190.466    1.2  224.300    0.5  281.100    0.7  232.200
+   O1  0.2434  293.833    0.1  130.800    0.3  271.000    0.5  190.600
+   P1  0.2611  169.534    0.3  223.800    0.2  279.500    0.2  228.700
+   Q1  0.2339  158.870    0.1  350.100    0.1  262.700    0.1  158.800
+   MF  0.0192  256.633    0.6  190.600    0.1  356.700    0.1  318.500
+   MM  0.0095  314.963    0.3  187.500    0.0  351.900    0.0  289.200
+   SSA 0.0014   20.933    0.3  180.500    0.0  359.300    0.0  193.400
+
+ 2.6 Dados meteorologicos de superficie                        
+
+     Temperatura      (C):  24.71  (Modelo GPT2    )
+     Pressao         (Mb):1004.70  (Modelo GPT2    )
+     Humidade Relativa(%):  89.86  (Modelo GPT2    )
+
+
+ 2.7 Modelo Troposferico                                
+
+     Atraso Hidrostatico : GPT2           
+     Atraso Umido        : GPT2 init      
+     Funcao de Mapeamento: GPT2           
+
+
+
+ -------------------------------------------------------------------------------
+ SECAO 3. Resumo do Processamento 
+ -------------------------------------------------------------------------------
+ 3.1 Opcoes de processamento
+     Modo de Operacao do Usuario              :   ESTATICO                   
+     Observacao processada                    :   CODIGO&FASE               
+     Frequencia observada                     :   L3                       
+     Orbitas dos satelites                    :   PRECISA                  
+     Intervalo de dados do Satelite           :   CLK-RINEX                
+     Modelo de Ionosfera                      :   L1&L2            Default 
+     Coordenadas do marco                     :   ESTIMADAS                
+     Atraso Troposferico no Zenite       (ATZ):   ESTIMADAS+GRADIENTS      
+     Interpolacao do relogio                  :   SIM                      
+     Parametro de suavizacao                  :   NAO                       
+     Sistema de Referencia                    :   SIRGAS2000              
+     Sistema de Coordenada                    :   ELIPSOIDAL              
+     Intervalo de relogio do satelite      (s):           30
+     Desvio Padrao da pseudodistancia      (m):        5.000
+     Desvio Padrao da portadora            (m):        0.010
+     Code misc. test limit                 (m):       45.000
+     Phase misc. test limit                (m):        0.090
+     Caminho aleatorio do ATZ          (mm/hr):        5.000
+     Tropo. Grad. rndm-walk            (mm/hr):        0.100
+     Distancia Marco->ARP                  (m):        0.008
+     Angulo de Elevacao                (graus):       10.000
+
+ 3.2 Sessao Observada
+
+     Nome do Marco                     :   AMCR                                    
+     Inicio                            :   2021/01/14 12:00:00.00
+     Fim                               :   2021/01/14 12:30:00.00
+     Intervalo de observacao      (seg):   30.00
+     Intervalo no processamento   (seg):   30.00
+     Numero de epocas processadas      :       61
+     Numero de epocas rejeitadas       :        0
+     Numero de satelites processados   :       18
+     Numero de observacoes processadas :      486  GPS    
+     Numero de observacoes rejeitadas  :       68  GPS    
+     Numero de observacoes ponderadas  :        0  GPS    
+     Residuos da pseudodistancia    (m):     1.60  GPS    
+     Residuos da fase da portadora (cm):     0.33  GPS    
+     Numero de observacoes processadas :      244  GLONASS
+     Numero de observacoes rejeitadas  :      176  GLONASS
+     Numero de observacoes ponderadas  :        0  GLONASS
+     Residuos da pseudodistancia    (m):     1.03  GLONASS
+     Residuos da fase da portadora (cm):     0.65  GLONASS
+
+ 3.3 Coordenadas Estimadas na Data do Levantamento
+
+ Aviso: As coordenadas do arquivo RINEX foram atualizadas com solucao inicial de codigo.
+
+ CARTESIANA          SIRGAS2000       ITRF (IGb14)  Sigma(m)    SIR-ITR(m)
+         X (m)       2874244.4726     2874244.4719     0.1368     0.0007
+         Y (m)      -5675803.2422    -5675803.2329     0.2132    -0.0093
+         Z (m)       -451414.5312     -451414.5264     0.0527    -0.0047
+
+ DESVIO PADRAO/CORRELACOES
+                         X(m)     Y(m)     Z(m)
+          X(m)         0.1368   0.2730   0.3688
+          Y(m)                  0.2132   0.5905
+          Z(m)                           0.0527
+
+ ELIPSOIDAL    
+ Latitude  (gms)    -4 05 08.9541    -4 05 08.9539     0.0475    -0.0041
+ Longitude (gms)   -63 08 31.9335   -63 08 31.9333     0.1749    -0.0035
+ Alt. Geo. (m)            42.3753          42.3663     0.1847     0.0090
+
+ DESVIO PADRAO/CORRELACOES
+                       Lat(m)   Lon(m)     H(m)
+        Lat(m)         0.0475   0.5110  -0.2823
+        Lon(m)                  0.1749  -0.4902
+          H(m)                           0.1847
+
+ 3.4 Diferenca de Coordenadas SIRGAS2000
+
+ CARTESIANA          ESTIMADA         A-PRIORI    Diferenca(m)    EMQ(m)
+         X (m)       2874244.4726     2874244.4295     0.0431     0.2204
+         Y (m)      -5675803.2422    -5675803.1723    -0.0699     0.5327
+         Z (m)       -451414.5312     -451414.7750     0.2438     0.2569
+
+ ELIPSOIDAL    
+ Latitude  (gms)    -4 05 08.9541    -4 05 08.9622     0.2491     0.2676
+ Longitude (gms)   -63 08 31.9335   -63 08 31.9337     0.0069     0.3815
+ Alt. Geo. (m)            42.3753          42.3111     0.0642     0.4257
+
+ 3.5 Estimativa do relogio do receptor                                
+
+     Epoca de Referencia               :   2021/01/14 00:00:00.00
+
+     Constelacao de Referencia         :   GPS            
+     Fase do relogio     (ns)          :       -39.14         0.11
+     Deriva da fase      (ns/dia)      :      -147.30         9.98
+     EMQ                 (ns)          :         0.45         58
+
+     Constelacao de Referencia         :   GLONASS        
+     Fase do relogio     (ns)          :        -7.37         0.16
+     Deriva da fase      (ns/dia)      :      -151.75        13.68
+     EMQ                 (ns)          :         0.62         58
+
+     Constelacao de Referencia         :   GLONASS-GPS    
+     Fase do relogio     (ns)          :        31.77         0.11
+     Deriva da fase      (ns/dia)      :        -4.45         9.37
+     EMQ                 (ns)          :         0.42         58
+
+
+ 3.6 Tabela de Observacoes Rejeitadas
+
+                                                             CODIGO        FASE
+PRN  AC #ARC  #OBS            #REJ                      MED   EMQ    MED   EMQ 
+                    TRK  SLP  REL  EFE  IGP  RES  ELV   (m)   (m)    (cm)  (cm)
+                                   TIM  NRL  WDL  DCM
+ G 2   8  1      2    5    2    0    0    0    0   35   1.01  0.76  -0.06  0.0
+                                     1    0    0    0                         
+ G 5   8  1     61    0    0    0    0    0    0    0  -0.51  1.56   0.10  0.4
+                                     0    0    0    0                         
+ G12 256  1     61    0    0    0    0    0    0    0  -0.84  0.93  -0.02  0.1
+                                     0    0    0    0                         
+ G15   8  1     61    0    0    0    0    0    0    0   0.55  1.81  -0.11  0.2
+                                     0    0    0    0                         
+ G20   8  1     57    0    1    3    0    0    0    0   1.25  1.55   0.00  0.4
+                                     1    0    0    0                         
+ G24   8  1     61    0    0    0    0    0    0    0   0.86  0.96  -0.08  0.3
+                                     0    0    0    0                         
+ G25   8  1     61    0    0    0    0    0    0    0  -0.54  1.07   0.01  0.2
+                                     0    0    0    0                         
+ G29 256  1     61    0    0    0    0    0    0    0  -0.01  1.01   0.04  0.1
+                                     0    0    0    0                         
+ G31   8  1      0    0    1    0    0    0    0   21   0.00  0.00   0.00  0.0
+                                     1    0    0    0                         
+ G32   8  1     61    0    0    0    0    0    0    0   1.05  2.90   0.18  0.4
+                                     0    0    0    0                         
+ R 7   8  1      0    0    2    0    0    0    0   45   0.00  0.00   0.00  0.0
+                                     3    0    0    0                         
+ R 9   8  1     61    0    0    0    0    0    0    0  -1.83  0.74  -0.04  0.4
+                                     0    0    0    0                         
+ R10   0  1      0   51   10    0    0    0    0    0   0.00  0.00   0.00  0.0
+                                     0    0    0    0                         
+ R11   0  1      0    0    5   56    0    0    0    0   0.00  0.00   0.00  0.0
+                                     5    0    0    0                         
+ R16   8  1      2    1    1    0    0    0    0    5  -0.13  1.21  -0.04  0.0
+                                     1    0    0    0                         
+ R20  64  1     60    0    0    0    0    0    0    0   1.81  1.30  -0.21  0.6
+                                     0    0    0    0                         
+ R21   8  1     61    0    0    0    0    0    0    0   1.99  0.64   0.02  0.4
+                                     0    0    0    0                         
+ R22   8  1     60    0    0    0    0    0    0    0  -1.73  1.27   0.08  0.9
+                                     0    0    0    0                         
+
+ 3.7 Lista de observacoes discrepantes
+
+                               CODIGO               FASE
+                            RES       MAX       RES       MAX DIR
+PRN   HH:MM:SS.SSS          (m)       (m)      (cm)      (cm)
