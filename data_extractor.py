@@ -9,7 +9,7 @@ csv_f = open('coord_data.csv', 'w')
 writer = csv.writer(csv_f)
 
 # write a row to the csv file   
-writer.writerow(['estação', 'data', 'duração', 'X', 'Y', 'Z', 'sigmaX', 'sigmaY', 'sigmaZ', 'IAR'])
+writer.writerow(['estação', 'data', 'duração', 'X', 'Y', 'Z', 'sigmaX', 'sigmaY', 'sigmaZ', 'IAR', 'correlXY', 'correlXZ', 'correlYZ'])
 
 def csrs (directory):
     files = os.listdir(directory)
@@ -84,7 +84,7 @@ def csrs (directory):
             if (line[1] == 'Z'):
                 Z_line = line
 
-        csv_row = [MKR_line[1], str(date), str(duration), X_line[5], Y_line[5], Z_line[5], X_line[7], Y_line[7], Z_line[7], IAR_line[1]]
+        csv_row = [MKR_line[1], str(date), str(duration), X_line[5], Y_line[5], Z_line[5], X_line[7], Y_line[7], Z_line[7], IAR_line[1], Y_line[8], Z_line[8], Z_line[9]]
         writer.writerow(csv_row)
 
 def ibge (directory):
@@ -138,12 +138,25 @@ def ibge (directory):
         Z_line = lines[Z_line_idx]
         Z_line = Z_line.split()
 
-        csv_row = [station_line[4], str(date), str(duration), X_line[3], Y_line[3], Z_line[3], X_line[4], Y_line[4], Z_line[4], '']
+        X_line_correlation_idx = X_line_idx+6
+        Y_line_correlation_idx = Y_line_idx+6
+        Z_line_correlation_idx = Z_line_idx+6
+
+        X_line_correlation = lines[X_line_correlation_idx]
+        X_line_correlation = X_line_correlation.split()
+
+        Y_line_correlation = lines[Y_line_correlation_idx]
+        Y_line_correlation = Y_line_correlation.split()
+
+        Z_line_correlation = lines[Z_line_correlation_idx]
+        Z_line_correlation = Z_line_correlation.split()
+
+        csv_row = [station_line[4], str(date), str(duration), X_line[3], Y_line[3], Z_line[3], X_line[4], Y_line[4], Z_line[4], '', X_line_correlation[2], X_line_correlation[3], Y_line_correlation[2]]
         writer.writerow(csv_row)
 
 while True:
     directory = input('Please insert the directory path: ')
-    print(directory)
+    #print(directory)
 
     try:
         csrs(directory)
