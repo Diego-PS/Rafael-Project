@@ -3,10 +3,10 @@ import os
 import csv
 
 # open the file in the write mode
-csv_f = open('coord_data.csv', 'w')
+csv_file = open('coord_data.csv', 'w', encoding='utf-8')
 
 # create the csv writer
-writer = csv.writer(csv_f)
+writer = csv.writer(csv_file, lineterminator='\n')
 
 # write a row to the csv file   
 writer.writerow(['estação', 'data', 'duração', 'X', 'Y', 'Z', 'sigmaX', 'sigmaY', 'sigmaZ', 'IAR', 'correlXY', 'correlXZ', 'correlYZ'])
@@ -173,5 +173,5 @@ while True:
         continue
     else:
         input('Press ENTER to quit')
-        csv_f.close()
+        csv_file.close()
         exit(0)
